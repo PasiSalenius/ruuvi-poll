@@ -1,0 +1,27 @@
+{
+  "name": "ruuvi-poll",
+  "version": "0.1.0",
+  "description": "Poll RuuviTag sensor and write to VictoriaMetrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PasiSalenius/ruuvi-poll.git"
+  },
+  "keywords": [
+    "ruuvi",
+    "victoriametrics"
+  ],
+  "author": "Pasi Salenius",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PasiSalenius/ruuvi-poll/issues"
+  },
+  "homepage": "https://github.com/PasiSalenius/ruuvi-poll#readme",
+  "dependencies": {
+    "node-ruuvitag": "^5.0.0"
+  }
+}
