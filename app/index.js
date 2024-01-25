@@ -2,7 +2,7 @@ const ruuvi = require('node-ruuvitag');
 const http = require("http");
 
 if (process.argv.length < 5) {
-    console.log("Usage: node start <RuuviTag ID> <metrics host> <poll interval>")
+    console.log("Usage: node start <RuuviTag ID> <metrics host> <minimum write interval (sec)>")
     process.exit()
 }
 
@@ -12,7 +12,7 @@ var interval = process.argv[4]
 
 console.log("RuuviTag id: " + ruuviID)
 console.log("Writing to host: " + writeHost)
-console.log("Polling interval: " + interval)
+console.log("Minimum write interval: " + interval)
 
 var lastPoll = 0
 
