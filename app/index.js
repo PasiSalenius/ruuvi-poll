@@ -22,7 +22,7 @@ ruuvi.on('found', tag => {
         // console.log('Got data from RuuviTag ' + tag.id + ':\n' + JSON.stringify(data, null, '\t'))
 
         const now = Date.now()
-        if (now - lastPoll > interval * 1000) {
+        if (tag.id == ruuviID && now - lastPoll > interval * 1000) {
             lastPoll = now
             write(data)
         }
