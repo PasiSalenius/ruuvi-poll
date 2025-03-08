@@ -54,7 +54,7 @@ function write(data) {
         }
     )
 
-    var s = `ruuvi,tag=ruuvi rssi=${data.rssi},temperature=${data.temperature},humidity=${data.humidity},battery=${data.battery}`
+    var s = `ruuvi,tag=ruuvi rssi=${data.rssi},temperature=${data.temperature},humidity=${data.humidity},pressure=${data.pressure},battery=${data.battery}`
 
     req.write(s)
     req.end()
